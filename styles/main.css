@@ -1,0 +1,93 @@
+header{
+	font-size: 80px;
+	margin-bottom: 0px;
+}
+html { 
+	background: url(background.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: transparent;
+}
+body{
+	margin: 0;
+	background-color: transparent;
+}
+.row{
+	margin-top: 40px;
+}
+
+.bio{
+	
+}
+
+#brand-image{
+	height: 180%;
+}
+
+.navbar-brand{
+	font: bold 20px;
+}
+nav{
+	padding: 20px;
+}
+
+.banner{
+	background-color: #ff55ff
+}
+
+.bg-4{
+	background-color: #2f2f2f;
+	color:#ffffff;
+	padding-top: 30px;
+	padding-bottom: 20px
+}
+
+.port-image{
+	height: 200px;
+}
+
+.port-text{
+	border-bottom-color: black;
+	vertical-align: middle;
+}
+
+.footer-text{
+	margin-left: 10px;
+}
+
+.footer{
+	margin-top: 14px;
+	margin-left: 10px;
+	width: 100%;
+	position: absolute;
+}
+
+th{
+	font-size: 15px;
+}
+
+tr{
+	font-size: 13px;
+	background-color: none;
+}
+.social_media{
+	max-height: 100px;
+}
+
+.navbar-custom{
+	background-color: white;
+	color: black;
+	padding-right: 10px;
+	margin: 20px 100px 30px 30px;
+}
+.navbar-custom li{
+	font: bold 20px Tahoma;
+}
+.navbar-brand p{
+	font: bold 20px Tahoma;
+}
+#resume{
+	margin-bottom: 100px;
+}
