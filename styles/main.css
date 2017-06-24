@@ -1,93 +1,106 @@
-header{
-	font-size: 80px;
-	margin-bottom: 0px;
-}
-html { 
-	background: url(background.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-color: transparent;
-}
-body{
-	margin: 0;
-	background-color: transparent;
-}
-.row{
-	margin-top: 40px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Share Tech', sans-serif;
 }
 
-.bio{
-	
-}
-
-#brand-image{
-	height: 180%;
-}
-
-.navbar-brand{
-	font: bold 20px;
-}
-nav{
-	padding: 20px;
+p, div {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 16px;
 }
 
 .banner{
-	background-color: #ff55ff
+  background-size: 100% auto;
+  background-image: url(../images/banner1.jpg);
+  height: 150px;
 }
 
-.bg-4{
-	background-color: #2f2f2f;
-	color:#ffffff;
-	padding-top: 30px;
-	padding-bottom: 20px
+.banner-content{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
-.port-image{
-	height: 200px;
+.banner-content > img{
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  padding-top: 7%;
 }
 
-.port-text{
-	border-bottom-color: black;
-	vertical-align: middle;
+.intro{
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
-.footer-text{
-	margin-left: 10px;
+.skills{
+  background-color: #f9eaea;
 }
 
-.footer{
-	margin-top: 14px;
-	margin-left: 10px;
-	width: 100%;
-	position: absolute;
+.skills-info{
+  padding-bottom: 40px;
+  display: inline;
 }
 
-th{
-	font-size: 15px;
+.skills-info > h1{
+  float: left;
 }
 
-tr{
-	font-size: 13px;
-	background-color: none;
-}
-.social_media{
-	max-height: 100px;
+.skills-info > ul{
+  float: left;
 }
 
-.navbar-custom{
-	background-color: white;
-	color: black;
-	padding-right: 10px;
-	margin: 20px 100px 30px 30px;
+.project{
+  background-color: azure;
+  padding: 3%;
+
 }
-.navbar-custom li{
-	font: bold 20px Tahoma;
+
+.project-image > img{
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-block;
 }
-.navbar-brand p{
-	font: bold 20px Tahoma;
+
+.contact{
+  background-color: lightgrey;
+  padding: 40px 0px;
 }
-#resume{
-	margin-bottom: 100px;
+
+.vcenter{
+  display: flex;
+  align-items: center;
+}
+
+.social{
+  padding: 10px 100px;
+  background-color: black;
+}
+
+.social-buttons > img{
+  width: 60px;
+  height: 60px;
+  background-color: orange;
+}
+
+.ender{
+  background-color: black;
+}
+
+.ender > img{
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: -5px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.ender > hr{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ender > h3{
+  color:white;
+  margin-left: 20px;
 }
