@@ -32,3 +32,7 @@
 .blank-page {
     height: 100vh;
 }
+
+.footer a {
+    color: #a8a8a8;
+}
