@@ -1,103 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Star Sandbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Molengo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/module.css"/>
+
+
+    <!--    Page Piling Stuff    -->
+    <!--    <link rel="stylesheet" type="text/css" href="./pagePiling/jquery.pagepiling.min.css"/>-->
 </head>
-
 <body>
-
-  <div class="container-fluid">
-    <header class="banner row">
-      <div class="banner-content col-xs-2 col-xs-offset-1 col-sm-2 col-sm-offset-1 col-md-1 col-md-offset-2  col-lg-1 col-lg-offset-2">
-        <img src="images/logo1.png"">
-      </div>
-      <div class="banner-content col-xs-5 col-sm-5 col-md-8 col-lg-3">
-        <h1>Andrew Tran</h1>
-      </div>
-    </header>
-  </div>
-
-  <div class="container-fluid">
-    <div class="intro row">
-      <div class="intro-content col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-        <h1>A bit about me...</h1>
-        <p>I'm Andrew Tran and I'm currently pursuing a BSeng at the University of Victoria. I've had a fascination with technology since a young age and I currently have experience in various front-end and back-end languages (click here to see more)</p>
-      </div>
+<!--<div id="pagepiling">-->
+<div class="content">
+    <div class="section s1"> <!-- canvas section -->
+        <div class="container">
+            <div class="row">
+                <canvas id="star-canvas"></canvas>
+                <script src="starfield.js"></script>
+            </div>
+        </div>
     </div>
+    <div class="blank-page"></div>
+    <div class="section main-section"> <!-- All content including bio and projects -->
+        <div class="container">
+            <div class="row top-card-row">
+                <div class="col-sm">
+                    <div class="card">
+                        <h2>About Me</h2>
+                        <p>I am an aspiring software engineer with experience in web development. I am currently
+                            studying
+                            software engineering at UVic as a 4th year student.</p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <h2>Work Experience</h2>
+                        <p>As a web developer at ACD Systems I worked on projects built with Symfony and Twig. I updated
+                            frontend
+                            styles using html/css, js and bootstrap. I also updated and added new features on the
+                            backend using PHP.</p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <h2>Other Experience</h2>
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- top cards section -->
+</div>
 
-    <div class="skills row">
-      <div class="skills-heading col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-2 col-lg-offset-2">
-        <h1>Technical Skills</h1>
-      </div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <span>Contact: <a>trandrew96@outlook.com</a></span>
+            </div>
+            <div class="col-sm text-right">
+                <span>
+                    <a href="https://www.linkedin.com/in/trandrewxyz/"><img src="./img/github-logo.png"></a>
+                    <a href="https://www.github.com/trandrew96"><img src="./img/linkedin-logo.png"></a>
+                </span>
+            </div>
+        </div>
     </div>
+</footer>
 
 
-    <article class="skills row">
-      <div class="skills-info col-lg-1 col-lg-offset-4 col-md-2 col-md-offset-3 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-1">
-        <h3>Front End</h3>
-        <ul>
-          <li>JavaScript</li>
-          <li>HTML/CSS</li>
-          <li>Bootstrap</li>
-        </ul>
-      </div>
-      <div class="skills-info col-lg-1 col-md-2 col-md-offset-1 col-sm-4 col-xs-4">
-        <h3>Back End</h3>
-        <ul>
-          <li>Python</li>
-          <li>Java</li>
-          <li>C/C++</li>
-          <li>mySQL</li>
-        </ul>
-      </div>
-      <div class="skills-info col-lg-2">
-      </div>
-    </article>
+<!-- Page Piling Stuff -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+<!--<script type="text/javascript" src="./pagePiling/jquery.pagepiling.min.js"></script>-->
+<!--<script>-->
+<!--    $(document).ready(function () {-->
+<!--        $('#pagepiling').pagepiling({-->
+<!--            menu: null,-->
+<!--            direction: 'vertical',-->
+<!--            verticalCentered: true,-->
+<!--            sectionsColor: ['black', '#121212', '#121212'],-->
+<!--            anchors: [],-->
+<!--            scrollingSpeed: 700,-->
+<!--            easing: 'swing',-->
+<!--            loopBottom: false,-->
+<!--            loopTop: false,-->
+<!--            css3: true,-->
+<!--            navigation: {-->
+<!--                'textColor': 'white',-->
+<!--                'bulletsColor': 'white',-->
+<!--                'position': 'right',-->
+<!--                'tooltips': ['section1', 'section2', 'section3', 'section4']-->
+<!--            },-->
+<!--            normalScrollElements: null,-->
+<!--            normalScrollElementTouchThreshold: 5,-->
+<!--            touchSensitivity: 5,-->
+<!--            keyboardScrolling: true,-->
+<!--            sectionSelector: '.section',-->
+<!--            animateAnchor: false,-->
 
-    <article class="project row">
-      <div class="project-image col-lg-2 col-md-3 col-md-offset-2 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
-        <img src="images/chat.png">
-      </div>
-      <div class="project-info col-lg-5 col-md-5 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-        <h2>pyChat</h2>
-        <p>Chat with friends using just your terminal! PyChat is a text-chat application (IRC) built entirely using python and websockets. Created for a school project, pyChat currently supports a whopping 20 users as well as special commands! Click here for more info, or click on the image for the github.</p>
-      </div>
-    </article>
+<!--            //events-->
+<!--            onLeave: function (index, nextIndex, direction) {-->
+<!--            },-->
+<!--            afterLoad: function (anchorLink, index) {-->
+<!--            },-->
+<!--            afterRender: function () {-->
+<!--            },-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
 
-    <footer class="contact row">
-      <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-        <h3>Contact me</h3>
-        <form>
-          <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-          <div class="form-group">
-            <label for="pwd">Message:</label>
-            <input type="password" class="form-control" id="pwd">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </div>
-    </footer>
-
-  </div>
-
-  <div class="container-fluid ender">
-    <a href="https://github.com/trandrew96">
-      <img src="images/github.png">
-    </a>
-    <a href="https://www.linkedin.com/in/andrew-tran-9a1b75b8">
-      <img src="images/linkedin.png">
-    </a>
-    <hr>
-    <h3>Site created by Andrew Tran using Twitter Bootstrap</h3>
-  </div>
-
+<!--  Bootstrap      -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
