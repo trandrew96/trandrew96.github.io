@@ -49,12 +49,6 @@ for ( let i = 0; i < innerHeight; i+=2) {
     starArray.push(new Star(x, i, dx, radius));
 }
 
-// Initialize logo
-let name_offset = -20, name_size = 100;
-let subname_offset = 25, subname_size = 45;
-let logo = new Logo("Andrew Tran", name_offset, name_size);
-let sublogo = new Logo("Software Engineer", subname_offset, subname_size);
-
 
 function animate() {
     requestAnimationFrame(animate);
@@ -64,8 +58,5 @@ function animate() {
     for ( let i = 0; i < starArray.length; i++ ) {
         starArray[i].update();
     }
-
-    logo.draw();
-    sublogo.draw();
 }
 animate();
